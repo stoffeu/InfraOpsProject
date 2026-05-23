@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamados</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <img src="../img/logo-infraops-semfundo.png" alt="Logo">
+            <h2>HelpDesk TI</h2>
+        </div>
+
+        <nav>
+
+            <a href="telaInicial.html">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
+
+            <a href="chamados.html" class="active">
+                <i class="fa-solid fa-ticket"></i>
+                Chamados
+            </a>
+
+            <a href="equipamentos.html">
+                <i class="fa-solid fa-computer"></i>
+                Equipamentos
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                Técnicos
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Relatórios
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <div>
+                <h1>Chamados</h1>
+                <p>Visão geral dos chamados pendentes, em andamento e finalizados.</p>
+            </div>
+            <button onclick="document.getElementById('filtro-aberto').scrollIntoView({behavior:'smooth'})">Novo Chamado</button>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <i> icone </i>
+                <h2>05</h2>
+                <span>Pendentes</span>
+            </div>
+            <div class="card">
+                <i> icone </i>
+                <h2>08</h2>
+                <span>Em andamento</span>
+            </div>
+            <div class="card">
+                <i> icone </i>
+                <h2>12</h2>
+                <span>Finalizados</span>
+            </div>
+        </section>
+
+        <section class="table-area">
+            <div class="table-header">
+                <h2>Lista de Chamados</h2>
+                <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:12px;">
+                    <button class="status aberto" onclick="filtrarChamados('todos')">Todos</button>
+                    <button class="status aberto" id="filtro-aberto" onclick="filtrarChamados('aberto')">Abertos</button>
+                    <button class="status andamento" onclick="filtrarChamados('andamento')">Em andamento</button>
+                    <button class="status fechado" onclick="filtrarChamados('fechado')">Finalizados</button>
+                    <input id="buscaChamados" type="search" placeholder="Pesquisar por solicitante, setor ou categoria" style="flex:1; padding:10px 14px; border:1px solid #ddd; border-radius:10px; min-width:220px;" oninput="filtrarBusca()" />
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Solicitante</th>
+                        <th>Setor</th>
+                        <th>Categoria</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaChamados">
+                    <tr data-status="aberto">
+                        <td>CH-101</td>
+                        <td>Mariana Silva</td>
+                        <td>RH</td>
+                        <td>Instalação de software</td>
+                        <td><span class="priority baixa">Baixa</span></td>
+                        <td><span class="status aberto">Aberto</span></td>
+                        <td>22/05/2026</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr data-status="andamento">
+                        <td>CH-102</td>
+                        <td>Pedro Almeida</td>
+                        <td>Financeiro</td>
+                        <td>Rede lenta</td>
+                        <td><span class="priority alta">Alta</span></td>
+                        <td><span class="status andamento">Em andamento</span></td>
+                        <td>21/05/2026</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr data-status="fechado">
+                        <td>CH-103</td>
+                        <td>Luana Costa</td>
+                        <td>TI</td>
+                        <td>Backup</td>
+                        <td><span class="priority media">Média</span></td>
+                        <td><span class="status fechado">Finalizado</span></td>
+                        <td>20/05/2026</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr data-status="aberto">
+                        <td>CH-104</td>
+                        <td>Rafael Souza</td>
+                        <td>Comercial</td>
+                        <td>Notebook com defeito</td>
+                        <td><span class="priority alta">Alta</span></td>
+                        <td><span class="status aberto">Aberto</span></td>
+                        <td>22/05/2026</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr data-status="andamento">
+                        <td>CH-105</td>
+                        <td>Ana Pereira</td>
+                        <td>Marketing</td>
+                        <td>Problema com impressora</td>
+                        <td><span class="priority media">Média</span></td>
+                        <td><span class="status andamento">Em andamento</span></td>
+                        <td>21/05/2026</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        const linhas = document.querySelectorAll('#tabelaChamados tr');
+        let statusFiltrado = 'todos';
+
+        function filtrarChamados(status) {
+            statusFiltrado = status;
+            aplicarFiltro();
+        }
+
+        function filtrarBusca() {
+            aplicarFiltro();
+        }
+
+        function aplicarFiltro() {
+            const termo = document.getElementById('buscaChamados').value.toLowerCase();
+
+            linhas.forEach(linha => {
+                const statusLinha = linha.dataset.status;
+                const textoLinha = linha.textContent.toLowerCase();
+                const statusValido = statusFiltrado === 'todos' || statusLinha === statusFiltrado;
+                const buscaValida = termo === '' || textoLinha.includes(termo);
+
+                linha.style.display = statusValido && buscaValida ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

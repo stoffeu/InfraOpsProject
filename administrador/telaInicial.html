@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de Chamados TI</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <img src="../img/logo-infraops-semfundo.png" alt="Logo">
+            <h2>HelpDesk TI</h2>
+        </div>
+
+        <nav>
+
+            <a href="telaInicial.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
+
+            <a href="chamados.html">
+                <i class="fa-solid fa-ticket"></i>
+                Chamados
+            </a>
+
+            <a href="equipamentos.html">
+                <i class="fa-solid fa-computer"></i>
+                Equipamentos
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                Técnicos
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Relatórios
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header>
+
+            <div>
+                <h1>Painel de Chamados</h1>
+                <p>Gerenciamento de suporte técnico</p>
+            </div>
+
+            <button>
+                <i class="fa-solid fa-plus"></i>
+                Novo Chamado
+            </button>
+
+        </header>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-ticket"></i>
+                <h2></h2>
+                <span>Chamados Abertos</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-spinner"></i>
+                <h2></h2>
+                <span>Em Atendimento</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2></h2>
+                <span>Resolvidos</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-computer"></i>
+                <h2></h2>
+                <span>Equipamentos</span>
+            </div>
+
+        </section>
+
+        <!-- TABELA -->
+        <section class="table-area">
+
+            <div class="table-header">
+                <h2>Últimos Chamados</h2>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuário</th>
+                        <th>Equipamento</th>
+                        <th>Problema</th>
+                        <th>Status</th>
+                        <th>Prioridade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="status andamento">Andamento</span></td>
+                        <td><span class="priority alta">Alta</span></td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
