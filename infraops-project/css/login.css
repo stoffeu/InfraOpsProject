@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1100px;
+    height: 650px;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Lado esquerdo */
+.left {
+    width: 50%;
+    background: linear-gradient(180deg, #000000, #1b1b1b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+}
+
+.left h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.input-box {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input-box i {
+    color: #008f4c;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #000;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.options a {
+    color: #00b060;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background: #009c53;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00b862;
+    transform: scale(1.02);
+}
+
+/* Lado direito */
+.right {
+    width: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.right img {
+    width: 90%;
+    max-width: 450px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+
+    .container {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        padding: 40px;
+    }
+}
