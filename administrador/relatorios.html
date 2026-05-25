@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Relatórios | InfraOps</title>
+
+  <link rel="stylesheet" href="../css/relatorios.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+  <aside class="sidebar">
+
+    <div>
+
+      <div class="logo">
+
+        <img src="../img/infraops.png">
+
+      </div>
+
+      <nav class="menu">
+
+        <a href="#">
+          <i class="fa-solid fa-house"></i>
+          Início
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-ticket"></i>
+          Chamados
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-computer"></i>
+          Equipamentos
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-users"></i>
+          Técnicos
+        </a>
+
+        <a href="#" class="active">
+          <i class="fa-solid fa-chart-line"></i>
+          Relatórios
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-gear"></i>
+          Configurações
+        </a>
+
+      </nav>
+
+    </div>
+    <div class="help-box">
+
+      <div class="help-icon">
+        <i class="fa-solid fa-headset"></i>
+      </div>
+
+      <h3>Precisa de ajuda?</h3>
+
+      <p>
+        Entre em contato com nosso suporte.
+      </p>
+
+      <button>
+        Abrir atendimento
+      </button>
+
+    </div>
+
+  </aside>
+
+  <main class="main">
+
+    <div class="top">
+
+      <div>
+
+        <h1>Relatórios</h1>
+
+        <p>
+          Acompanhe os indicadores e relatórios do sistema HelpDesk TI.
+        </p>
+
+      </div>
+
+      <div class="top-actions">
+
+        <div class="date-box">
+
+          <i class="fa-regular fa-calendar"></i>
+
+          <span>01/05/2024 - 31/05/2024</span>
+
+          <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+        <button class="export-btn">
+
+          <i class="fa-solid fa-download"></i>
+
+          Exportar relatório
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="stats-grid">
+
+      <div class="stat-card">
+
+        <div class="stat-icon green">
+          <i class="fa-solid fa-ticket"></i>
+        </div>
+
+        <div>
+
+          <h2>156</h2>
+
+          <p>Total de chamados</p>
+
+          <span class="positive">
+            ↑ 18% vs mês anterior
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="stat-card">
+
+        <div class="stat-icon green">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div>
+
+          <h2>124</h2>
+
+          <p>Chamados concluídos</p>
+
+          <span class="positive">
+            ↑ 22% vs mês anterior
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="stat-card">
+
+        <div class="stat-icon yellow">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+
+        <div>
+
+          <h2>18</h2>
+
+          <p>Em andamento</p>
+
+          <span class="negative">
+            ↓ 5% vs mês anterior
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="stat-card">
+
+        <div class="stat-icon red">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+
+        <div>
+
+          <h2>14</h2>
+
+          <p>Cancelados</p>
+
+          <span class="negative">
+            ↓ 8% vs mês anterior
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="stat-card">
+
+        <div class="stat-icon blue">
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+
+          <h2>8</h2>
+
+          <p>Técnicos ativos</p>
+
+          <span class="positive">
+            ↑ 0% vs mês anterior
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="charts">
+
+      <div class="chart-card large">
+
+        <h3>Chamados por status</h3>
+
+        <div class="fake-chart donut"></div>
+
+      </div>
+
+      <div class="chart-card large">
+
+        <h3>Chamados por período</h3>
+
+        <div class="line-chart">
+
+          <div class="line"></div>
+
+        </div>
+
+      </div>
+
+      <div class="chart-card">
+
+        <h3>Top categorias</h3>
+
+        <div class="category">
+
+          <span>Suporte Técnico</span>
+
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+
+        </div>
+
+        <div class="category">
+
+          <span>Hardware</span>
+
+          <div class="bar">
+            <div style="width:65%"></div>
+          </div>
+
+        </div>
+
+        <div class="category">
+
+          <span>Software</span>
+
+          <div class="bar">
+            <div style="width:50%"></div>
+          </div>
+
+        </div>
+
+        <div class="category">
+
+          <span>Redes</span>
+
+          <div class="bar">
+            <div style="width:45%"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-grid">
+
+      <div class="bottom-card">
+
+        <h3>Tempo médio de atendimento</h3>
+
+        <div class="time-box">
+
+          <div class="time-icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+
+          <h2>2h 34m</h2>
+
+        </div>
+
+        <p>Tempo médio de resolução</p>
+
+      </div>
+
+      <div class="bottom-card">
+
+        <h3>Chamados por prioridade</h3>
+
+        <div class="priority">
+
+          <span>Alta</span>
+
+          <div class="priority-bar red-bar"></div>
+
+        </div>
+
+        <div class="priority">
+
+          <span>Média</span>
+
+          <div class="priority-bar yellow-bar"></div>
+
+        </div>
+
+        <div class="priority">
+
+          <span>Baixa</span>
+
+          <div class="priority-bar green-bar"></div>
+
+        </div>
+
+      </div>
+
+      <div class="bottom-card">
+
+        <h3>Técnicos com mais atendimentos</h3>
+
+        <div class="tech">
+
+          <span>Lucas Ferreira</span>
+          <strong>42</strong>
+
+        </div>
+
+        <div class="tech">
+
+          <span>Camila Santos</span>
+          <strong>33</strong>
+
+        </div>
+
+        <div class="tech">
+
+          <span>Rafael Almeida</span>
+          <strong>28</strong>
+
+        </div>
+
+      </div>
+
+      <div class="bottom-card">
+
+        <h3>SLA</h3>
+
+        <div class="sla-circle">
+
+          <span>94%</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
