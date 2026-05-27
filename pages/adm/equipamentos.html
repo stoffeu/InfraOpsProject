@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Grupo InfraOps Unisales"> 
+
+        <title>Equipamentos | Administração de TI</title>
+        
+        <link rel="stylesheet" href="../../assets/css/telaInicial.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="logo-area">
+                <img src="../../assets/img/logo-infraops-semfundo.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="tela-inicial.html">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+                <a href="equipamentos.html" class="active">
+                    <i class="fa-solid fa-computer"></i>
+                    Equipamentos
+                </a>
+                <a href="tecnico.html">
+                    <i class="fa-solid fa-users"></i>
+                    Técnicos
+                </a>
+                <a href="relatorios.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Relatórios
+                </a>
+                <a href="config.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1>Inventário de Equipamentos</h1>
+                    <p>Visualize todos os ativos de TI com seus identificadores, local e status.</p>
+                </div>
+                <a href="cadastro-equipamento.html" class="btn-chamado">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Equipamento
+                </a>
+            </header>
+
+            <section class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>24</h2>
+                    <span>Computadores</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-print"></i>
+                    <h2>08</h2>
+                    <span>Impressoras</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-video"></i>
+                    <h2>05</h2>
+                    <span>Projetores</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-server"></i>
+                    <h2>14</h2>
+                    <span>Outros ativos</span>
+                </div>
+            </section>
+
+            <section class="table-area">
+                <div class="table-header">
+                    <h2>Equipamentos no inventário</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tipo</th>
+                            <th>Marca / Modelo</th>
+                            <th>Identificador</th>
+                            <th>Local</th>
+                            <th>Especificações</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EQ-001</td>
+                            <td>Computador</td>
+                            <td>Dell OptiPlex 7080</td>
+                            <td>MB-1245</td>
+                            <td>RH - Sala 2</td>
+                            <td>i5, 16GB, 512GB SSD</td>
+                            <td>
+                                <span class="status andamento">
+                                    Em uso
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EQ-012</td>
+                            <td>Impressora</td>
+                            <td>HP LaserJet Pro</td>
+                            <td>PR-3261</td>
+                            <td>Financeiro</td>
+                            <td>Laser, Rede</td>
+                            <td>
+                                <span class="status aberto">
+                                    Disponível
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EQ-023</td>
+                            <td>Projetor</td>
+                            <td>Epson EB-X41</td>
+                            <td>PJ-4390</td>
+                            <td>Sala de Treinamento</td>
+                            <td>4500 lúmens, HDMI</td>
+                            <td>
+                                <span class="status fechado">
+                                    Manutenção
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EQ-034</td>
+                            <td>Notebook</td>
+                            <td>Samsung Book</td>
+                            <td>NB-7700</td>
+                            <td>Comercial</td>
+                            <td>Core i7, 16GB, 1TB</td>
+                            <td>
+                                <span class="status andamento">
+                                    Em uso
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EQ-045</td>
+                            <td>Monitor</td>
+                            <td>LG 24" UltraWide</td>
+                            <td>MN-5512</td>
+                            <td>Diretoria</td>
+                            <td>1920x1080, 24"</td>
+                            <td>
+                                <span class="status aberto">
+                                    Disponível
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

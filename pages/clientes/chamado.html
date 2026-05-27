@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abertura de Chamado</title>
+
+    <link rel="stylesheet" href="/InfraOpsProject-main/assets/css/formulario.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LADO ESQUERDO -->
+        <div class="left">
+
+            <img src="../img/logo-infraops-semfundo.png" alt="Logo" class="logo">
+
+            <h1>Central de Suporte TI</h1>
+
+            <p>
+                Abra um chamado para problemas relacionados a:
+            </p>
+
+            <div class="services">
+
+                <div class="service">
+                    <i class="fa-solid fa-computer"></i>
+                    <span>Computadores</span>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Impressoras</span>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-display"></i>
+                    <span>Monitores</span>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Projetores</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="right">
+
+            <h2>Abrir Chamado</h2>
+
+            <form>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="input-box">
+                        <label>RA</label>
+                        <input type="text" placeholder="Digite seu RA">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label>Local</label>
+
+                        <select>
+                            <option>Selecione</option>
+                            <option>RH</option>
+                            <option>Laboratório</option>
+                            <option>Financeiro</option>
+                            <option>Secretaria</option>
+                            <option>Sala de Aula</option>
+                            <option>Coordenação</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Problema Principal</label>
+
+                        <select>
+                            <option>Selecione</option>
+                            <option>Impressora</option>
+                            <option>Computador</option>
+                            <option>Monitor</option>
+                            <option>Projetor</option>
+                            <option>Rede/Internet</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="input-box full">
+                    <label>Problema Secundário</label>
+
+                    <select>
+                        <option>Selecione</option>
+                        <option>Não liga</option>
+                        <option>Está lento</option>
+                        <option>Não imprime</option>
+                        <option>Sem conexão</option>
+                        <option>Travando</option>
+                        <option>Tela preta</option>
+                        <option>Não funciona</option>
+                    </select>
+                </div>
+
+                <div class="input-box full">
+                    <label>Descrição do Problema</label>
+
+                    <textarea placeholder="Descreva detalhadamente o problema..."></textarea>
+                </div>
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Enviar Chamado
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

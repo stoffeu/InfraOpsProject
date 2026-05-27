@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo InfraOps Unisales">
+
+        <title>Técnicos</title>
+
+        <link rel="stylesheet" href="../../assets/css/telaInicial.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <img src="../../assets/img/logo-infraops-semfundo.png" alt="Logo">
+            </div>
+
+            <nav>
+                <a href="tela-inicial.html">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+
+                <a href="equipamentos.html">
+                    <i class="fa-solid fa-computer"></i>
+                    Equipamentos
+                </a>
+
+                <a href="tecnico.html" class="active">
+                    <i class="fa-solid fa-users"></i>
+                    Técnicos
+                </a>
+
+                <a href="relatorios.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Relatórios
+                </a>
+
+                <a href="config.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header>
+                <div>
+                    <h1>Técnicos Cadastrados</h1>
+                    <p>
+                        Gerenciamento dos técnicos da equipe de suporte.
+                    </p>
+                </div>
+
+                <a href="cadastro-tecnico.html"
+                    class="btn-chamado">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    Novo Técnico
+                </a>
+            </header>
+
+            <section class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h2>08</h2>
+                    <span>Total de Técnicos</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h2>06</h2>
+                    <span>Ativos</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>24</h2>
+                    <span>Chamados Atendidos</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h2>03</h2>
+                    <span>Em Atendimento</span>
+                </div>
+            </section>
+
+            <section class="table-area">
+                <div class="table-header">
+
+                    <h2>Lista de Técnicos</h2>
+
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Especialidade</th>
+                            <th>Status</th>
+                            <th>Chamados</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>TEC-001</td>
+                            <td>Lucas Almeida</td>
+                            <td>lucas@infraops.com</td>
+                            <td>Hardware</td>
+                            <td>
+                                <span class="status fechado">
+                                    Ativo
+                                </span>
+                            </td>
+                            <td>12</td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>TEC-002</td>
+                            <td>Mariana Costa</td>
+                            <td>mariana@infraops.com</td>
+                            <td>Redes</td>
+                            <td>
+                                <span class="status andamento">
+                                    Ocupado
+                                </span>
+                            </td>
+                            <td>08</td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>TEC-003</td>
+                            <td>Pedro Henrique</td>
+                            <td>pedro@infraops.com</td>
+                            <td>Impressoras</td>
+                            <td>
+                                <span class="status aberto">
+                                    Ausente
+                                </span>
+                            </td>
+                            <td>04</td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

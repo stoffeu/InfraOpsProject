@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 270px;
+    background: #000;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-area {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo-area img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.logo-area h2 {
+    color: #00a859;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav .active {
+    background: #00a859;
+}
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+}

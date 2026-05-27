@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Visualizar Detalhes</title>
+
+    <link rel="stylesheet" href="../../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../../assets/css/ver-formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="../../assets/img/logo-infraops-semfundo.png"
+                alt="Logo">
+        </div>
+
+        <nav>
+            <a href="tela-inicial.html">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
+
+            <a href="equipamentos.html">
+                <i class="fa-solid fa-computer"></i>
+                Equipamentos
+            </a>
+
+            <a href="tecnico.html">
+                <i class="fa-solid fa-users"></i>
+                Técnicos
+            </a>
+
+            <a href="relatorios.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Relatórios
+            </a>
+
+            <a href="config.html">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </a>
+        </nav>
+    </aside>
+
+    <main class="view-container">
+        <div class="view-header">
+
+            <div>
+                <h1>
+                    <i class="fa-solid fa-circle-info"></i>
+                    Detalhes do Chamado
+                </h1>
+
+                <p>
+                    Visualização completa das informações do registro.
+                </p>
+            </div>
+
+            <a href="tela-inicial.html" class="btn-back">
+
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
+            </a>
+        </div>
+
+        <section class="details-card">
+
+            <div class="card-top">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-ticket"></i>
+                </div>
+
+                <div>
+                    <h2>CH-001</h2>
+                    <span class="status andamento">
+                        Em andamento
+                    </span>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <label>Solicitante</label>
+                    <p>Marcos Silva</p>
+                </div>
+
+                <div class="detail-item">
+                    <label>Local</label>
+                    <p>RH - Sala 02</p>
+                </div>
+
+                <div class="detail-item">
+                    <label>Equipamento</label>
+                    <p>Impressora HP</p>
+                </div>
+
+                <div class="detail-item">
+                    <label>Problema</label>
+                    <p>Não imprime documentos</p>
+                </div>
+
+                <div class="detail-item">
+                    <label>Prioridade</label>
+
+                    <span class="priority alta">
+                        Alta
+                    </span>
+
+                </div>
+
+                <div class="detail-item">
+                    <label>Data de abertura</label>
+                    <p>25/05/2026</p>
+                </div>
+            </div>
+
+            <div class="description-box">
+                <label>Descrição Completa</label>
+                <p>
+                    A impressora do setor RH não está imprimindo documentos
+                    enviados pela rede interna. Já foi reiniciada porém
+                    continua apresentando falhas.
+                </p>
+            </div>
+
+            <div class="actions">
+                <button class="btn-accept">
+                    <i class="fa-solid fa-check"></i>
+                    Aceitar
+                </button>
+                <button class="btn-reject">
+                    <i class="fa-solid fa-xmark"></i>
+                    Rejeitar
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

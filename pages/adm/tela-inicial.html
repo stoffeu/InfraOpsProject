@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo InfraOps Unisales">
+
+        <title>Painel de Chamados TI</title>
+
+        <link rel="stylesheet" href="../../assets/css/telaInicial.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="logo-area">
+                <img src="../../assets/img/logo-infraops-semfundo.png" alt="Logo">
+            </div>
+            <nav>
+                <a href="tela-inicial.html" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+                <a href="equipamentos.html">
+                    <i class="fa-solid fa-computer"></i>
+                    Equipamentos
+                </a>
+                <a href="tecnico.html">
+                    <i class="fa-solid fa-users"></i>
+                    Técnicos
+                </a>
+                <a href="relatorios.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Relatórios
+                </a>
+                <a href="config.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1>Painel de Chamados</h1>
+                    <p>Gerenciamento de suporte técnico</p>
+                </div>
+
+                <a href="../clientes/chamado.html" class="btn-chamado">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Chamado
+                </a>
+            </header>
+
+            <section class="cards">
+
+                <div class="card">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h2></h2>
+                    <span>Chamados Abertos</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-spinner"></i>
+                    <h2></h2>
+                    <span>Em Atendimento</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h2></h2>
+                    <span>Resolvidos</span>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-computer"></i>
+                    <h2></h2>
+                    <span>Equipamentos</span>
+                </div>
+            </section>
+
+            <section class="table-area">
+
+                <div class="table-header">
+                    <h2>Últimos Chamados</h2>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuário</th>
+                            <th>Equipamento</th>
+                            <th>Problema</th>
+                            <th>Status</th>
+                            <th>Prioridade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>CH-001</td>
+                            <td>Marcos Silva</td>
+                            <td>Impressora</td>
+                            <td>Não imprime documentos</td>
+
+                            <td>
+                                <span class="status andamento">
+                                    Andamento
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="priority alta">
+                                    Alta
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CH-002</td>
+                            <td>Ana Costa</td>
+                            <td>Computador</td>
+                            <td>Computador muito lento</td>
+                            <td>
+                                <span class="status aberto">
+                                    Aberto
+                                </span>
+                            </td>
+                            <td>
+                                <span class="priority media">
+                                    Média
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CH-003</td>
+                            <td>João Pereira</td>
+                            <td>Projetor</td>
+                            <td>Projetor sem imagem</td>
+                            <td>
+                                <span class="status fechado">
+                                    Resolvido
+                                </span>
+                            </td>
+                            <td>
+                                <span class="priority baixa">
+                                    Baixa
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn-ver">
+                                    Ver
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

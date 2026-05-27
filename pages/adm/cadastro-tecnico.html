@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo InfraOps Unisales">
+
+        <title>Novo Técnico</title>
+
+        <link rel="stylesheet"href="../../assets/css/formulario.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="left">
+
+                <img src="../../assets/img/logo-infraops-semfundo.png"
+                    alt="Logo"
+                    class="logo">
+
+                <h1>Cadastro de Técnicos</h1>
+
+                <p>
+                    Cadastre novos técnicos responsáveis
+                    pelo suporte e atendimento dos chamados
+                    da plataforma InfraOps.
+                </p>
+
+                <div class="services">
+
+                    <div class="service">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <span>Suporte Técnico</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>Redes</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Hardware</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Atendimento</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <h2>Novo Técnico</h2>
+
+                <form>
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label>Nome Completo</label>
+                            <input type="text"
+                                placeholder="Digite o nome do técnico">
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>Matrícula</label>
+
+                            <input type="text"
+                                placeholder="Ex: TEC-001">
+
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email"
+                                placeholder="Digite o email">
+
+                        </div>
+
+                        <div class="input-box">
+                            <label>Telefone</label>
+                            <input type="text"
+                                placeholder="(27) 99999-9999">
+
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label>Especialidade</label>
+                            <select>
+                                <option>Selecione</option>
+                                <option>Hardware</option>
+                                <option>Redes</option>
+                                <option>Impressoras</option>
+                                <option>Infraestrutura</option>
+                                <option>Suporte N1</option>
+                                <option>Suporte N2</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label>Status</label>
+                            <select>
+                                <option>Selecione</option>
+                                <option>Ativo</option>
+                                <option>Férias</option>
+                                <option>Ausente</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-box full">
+
+                        <label>Observações</label>
+
+                        <textarea placeholder="Informações adicionais sobre o técnico..."></textarea>
+
+                    </div>
+                    <button type="submit">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        Cadastrar Técnico
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

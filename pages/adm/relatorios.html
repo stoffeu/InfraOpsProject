@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Relatórios</title>
+
+    <link rel="stylesheet" href="../../assets/css/telaInicial.css">
+    <link rel="stylesheet" href="../../assets/css/relatorio.css">
+    <link rel="stylesheet"href="../../assets/css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="../../assets/img/logo-infraops-semfundo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="tela-inicial.html">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
+            <a href="equipamentos.html">
+                <i class="fa-solid fa-computer"></i>
+                Equipamentos
+            </a>
+            <a href="tecnico.html">
+                <i class="fa-solid fa-users"></i>
+                Técnicos
+            </a>
+            <a href="relatorios.html" class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                Relatórios
+            </a>
+            <a href="config.html">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <div>
+                <h1>Relatórios</h1>
+                <p>
+                    Indicadores e métricas do sistema de chamados.
+                </p>
+            </div>
+            <a href="#"
+                class="btn-chamado">
+
+                <i class="fa-solid fa-file-pdf"></i>
+                Exportar PDF
+            </a>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <i class="fa-solid fa-ticket"></i>
+                <h2>124</h2>
+                <span>Total de Chamados</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2>98</h2>
+                <span>Resolvidos</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-clock"></i>
+                <h2>26</h2>
+                <span>Pendentes</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h2>08</h2>
+                <span>Técnicos Ativos</span>
+            </div>
+        </section>
+
+        <section class="table-area">
+            <div class="table-header">
+                <h2>Resumo Geral</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Total</th>
+                        <th>Resolvidos</th>
+                        <th>Pendentes</th>
+                        <th>Tempo Médio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Computadores</td>
+                        <td>45</td>
+                        <td>38</td>
+                        <td>07</td>
+                        <td>2h 15min</td>
+                    </tr>
+                    <tr>
+                        <td>Impressoras</td>
+                        <td>30</td>
+                        <td>24</td>
+                        <td>06</td>
+                        <td>1h 40min</td>
+                    </tr>
+                    <tr>
+                        <td>Rede</td>
+                        <td>28</td>
+                        <td>21</td>
+                        <td>07</td>
+                        <td>3h 05min</td>
+                    </tr>
+                    <tr>
+                        <td>Projetores</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>02</td>
+                        <td>50min</td>
+                    </tr>
+                    <tr>
+                        <td>Monitores</td>
+                        <td>09</td>
+                        <td>05</td>
+                        <td>04</td>
+                        <td>1h 20min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="table-area">
+            <div class="table-header">
+                <h2>Desempenho dos Técnicos</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Técnico</th>
+                        <th>Especialidade</th>
+                        <th>Chamados</th>
+                        <th>Resolvidos</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Lucas Almeida</td>
+                        <td>Hardware</td>
+                        <td>22</td>
+                        <td>18</td>
+                        <td>
+                            <span class="status fechado">
+                                Excelente
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mariana Costa</td>
+                        <td>Redes</td>
+                        <td>18</td>
+                        <td>15</td>
+                        <td>
+                            <span class="status andamento">
+                                Bom
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro Henrique</td>
+                        <td>Impressoras</td>
+                        <td>10</td>
+                        <td>07</td>
+                        <td>
+                            <span class="status aberto">
+                                Médio
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

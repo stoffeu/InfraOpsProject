@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo InfraOps Unisales">
+
+        <title>Cadastro de Equipamentos</title>
+
+        <link rel="stylesheet" href="../../assets/css/formulario.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img src="../../assets/img/logo-infraops-semfundo.png"
+                    alt="Logo"
+                    class="logo">
+
+                <h1>Cadastro de Equipamentos</h1>
+
+                <p>
+                    Cadastre equipamentos utilizados
+                    no ambiente corporativo para
+                    controle e suporte técnico.
+                </p>
+
+                <div class="services">
+
+                    <div class="service">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Computadores</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Impressoras</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-display"></i>
+                        <span>Monitores</span>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Projetores</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <h2>Novo Equipamento</h2>
+
+                <form>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label>Nome do Equipamento</label>
+
+                            <input type="text"
+                                placeholder="Ex: Computador Dell">
+                        </div>
+
+                        <div class="input-box">
+                            <label>Patrimônio</label>
+
+                            <input type="text"
+                                placeholder="Ex: PAT-00125">
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+
+                            <label>Categoria</label>
+
+                            <select>
+                                <option>Selecione</option>
+                                <option>Computador</option>
+                                <option>Impressora</option>
+                                <option>Monitor</option>
+                                <option>Projetor</option>
+                                <option>Notebook</option>
+                            </select>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>Local</label>
+
+                            <select>
+                                <option>Selecione</option>
+                                <option>RH</option>
+                                <option>Financeiro</option>
+                                <option>Laboratório</option>
+                                <option>Secretaria</option>
+                                <option>Coordenação</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label>Marca</label>
+
+                            <input type="text"
+                                placeholder="Ex: Dell">
+                        </div>
+
+                        <div class="input-box">
+                            <label>Modelo</label>
+
+                            <input type="text"
+                                placeholder="Ex: Optiplex 7090">
+                        </div>
+
+                    </div>
+
+                    <div class="input-box full">
+
+                        <label>Observações</label>
+
+                        <textarea placeholder="Informações adicionais sobre o equipamento..."></textarea>
+
+                    </div>
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Cadastrar Equipamento
+
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

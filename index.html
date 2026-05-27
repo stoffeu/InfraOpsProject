@@ -3,26 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>InfraOps - Página Inicial</title>
-        <link rel="stylesheet" href="css/estilo.css">
+        <meta name="author" content="Grupo InfraOps Unisales">
+        <meta name="description" content="Sistema de Help Desk para gerenciamento de chamados de TI, suporte técnico, controle de equipamentos e atendimento de problemas relacionados a computadores, impressoras, monitores e rede.">
+        <title>Login InfraOps</title>
+        <link rel="stylesheet" href="./assets/css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-        <div class="sidebar">
-            <div class ="logo">
-                <h1>InfraOps</h1>
+        <div class="container">
+            <div class="left">
+                <img src="./assets/img/logo-infraops-semfundo.png" alt="Logo" class="logo">
+                <h1>Bem-vindo</h1>
+
+                <form>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Usuário">
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Lembrar-me
+                        </label>
+
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit"><a href="./pages/adm/tela-inicial.html">Entrar</a></button>
+                </form>
             </div>
-            <aside>
-                <div class = "menu">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Equipamentos</a></li>
-                            <li><a href="#">Cadastrar Equipamento</a></li>
-                            <li><a href="#">Chamados</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </aside>    
+            <div class="right">
+                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Ilustração">
+            </div>
         </div>
     </body>
 </html>
